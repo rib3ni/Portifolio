@@ -1,0 +1,469 @@
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/013/475/424/original/open-laptop-icon-illustration-png.png">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description"
+        content="Welcome to my developer portfolio! Explore a collection of my projects and web applications showcasing my expertise in building dynamic and interactive user interfaces. With a passion for clean code and innovative solutions, I strive to create seamless user experiences that blend functionality with stunning designs.">
+    <meta name="theme-color" content="#000000">
+    <meta name="My personal portfolio." content="Front-end developer portfolio">
+    <link rel="apple-touch-icon" href="./porticon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <script src="https://kit.fontawesome.com/a388be2306.js" crossorigin="anonymous" defer="defer"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"> </script>
+    <script nomodule src="https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"> </script>
+    <script>
+        let localS = localStorage.getItem('theme')
+        if (localS === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark')
+        }
+    </script>
+
+    <style media="all" id="fa-v4-font-face">
+        @font-face {
+            font-family: "FontAwesome";
+            font-display: block;
+            src: url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-solid-900.woff2) format("woff2"), url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-solid-900.ttf) format("truetype")
+        }
+
+        @font-face {
+            font-family: "FontAwesome";
+            font-display: block;
+            src: url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-brands-400.woff2) format("woff2"), url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-brands-400.ttf) format("truetype")
+        }
+
+        @font-face {
+            font-family: "FontAwesome";
+            font-display: block;
+            src: url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-regular-400.woff2) format("woff2"), url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-regular-400.ttf) format("truetype");
+            unicode-range: u+f003, u+f006, u+f014, u+f016-f017, u+f01a-f01b, u+f01d, u+f022, u+f03e, u+f044, u+f046, u+f05c-f05d, u+f06e, u+f070, u+f087-f088, u+f08a, u+f094, u+f096-f097, u+f09d, u+f0a0, u+f0a2, u+f0a4-f0a7, u+f0c5, u+f0c7, u+f0e5-f0e6, u+f0eb, u+f0f6-f0f8, u+f10c, u+f114-f115, u+f118-f11a, u+f11c-f11d, u+f133, u+f147, u+f14e, u+f150-f152, u+f185-f186, u+f18e, u+f190-f192, u+f196, u+f1c1-f1c9, u+f1d9, u+f1db, u+f1e3, u+f1ea, u+f1f7, u+f1f9, u+f20a, u+f247-f248, u+f24a, u+f24d, u+f255-f25b, u+f25d, u+f271-f274, u+f278, u+f27b, u+f28c, u+f28e, u+f29c, u+f2b5, u+f2b7, u+f2ba, u+f2bc, u+f2be, u+f2c0-f2c1, u+f2c3, u+f2d0, u+f2d2, u+f2d4, u+f2dc
+        }
+
+        @font-face {
+            font-family: "FontAwesome";
+            font-display: block;
+            src: url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-v4compatibility.woff2) format("woff2"), url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-v4compatibility.ttf) format("truetype");
+            unicode-range: u+f041, u+f047, u+f065-f066, u+f07d-f07e, u+f080, u+f08b, u+f08e, u+f090, u+f09a, u+f0ac, u+f0ae, u+f0b2, u+f0d0, u+f0d6, u+f0e4, u+f0ec, u+f10a-f10b, u+f123, u+f13e, u+f148-f149, u+f14c, u+f156, u+f15e, u+f160-f161, u+f163, u+f175-f178, u+f195, u+f1f8, u+f219, u+f27a
+        }
+    </style>
+    <style media="all" id="fa-v5-font-face">
+        @font-face {
+            font-family: "Font Awesome 5 Brands";
+            font-display: block;
+            font-weight: 400;
+            src: url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-brands-400.woff2) format("woff2"), url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-brands-400.ttf) format("truetype")
+        }
+
+        @font-face {
+            font-family: "Font Awesome 5 Free";
+            font-display: block;
+            font-weight: 900;
+            src: url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-solid-900.woff2) format("woff2"), url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-solid-900.ttf) format("truetype")
+        }
+
+        @font-face {
+            font-family: "Font Awesome 5 Free";
+            font-display: block;
+            font-weight: 400;
+            src: url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-regular-400.woff2) format("woff2"), url(https://ka-f.fontawesome.com/releases/v6.4.0/webfonts/free-fa-regular-400.ttf) format("truetype")
+        }
+    </style>
+
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Renan Pereira | Front-end Developer</title>
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h3>Renan Pereira</h3>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#qualification">Qualification</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+
+            <div id="theme-switcher">
+                <li><ion-icon id="icon-sun" name="sunny"></ion-icon> </li>
+                <li><ion-icon id="icon-moon" name="moon"></ion-icon> </li>
+            </div>
+
+
+            <li><i class="fa-solid fa-bars-staggered mobile-menu"></i></li>
+        </ul>
+    </nav>
+    <div class="mobile-nav closed-menu"><span><i class="fa-solid fa-xmark"></i></span>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="content">
+                <div class="hero-main">
+                    <div class="hero-text">
+                        <h1>Front-End React Developer</h1><img
+                            src="https://www.pngkey.com/png/full/148-1485816_open-waving-hand-emoji-svg.png"
+                            alt="waving_hand">
+                        <p>Hi, I'm Renan Pereira. A Front-end Developer based in Brighton,
+                            England. 📍</p><span><a aria-label="linkedin" rel="noreferrer" target="_blank"
+                                href="https://www.linkedin.com/in/renanaugustopereira/">
+                                <i class="fa-brands fa-linkedin"></i></a><a aria-label="github" rel="noreferrer"
+                                target="_blank" href="https://github.com/rib3ni">
+
+                                <i class="fa-brands fa-github"></i></a></span>
+                    </div>
+                    <div class="hero-img"></div>
+                </div>
+                <div class="skills">
+                    <p>Technologies</p>
+                    <div class="logos">
+                        <ul>
+                            <li><img src="https://logospng.org/download/html-5/logo-html-5-1024.png" title="HTML5"
+                                    alt="skill-icon"></li>
+                            <li><img src="https://logospng.org/download/css-3/logo-css-3-2048.png" title="CSS3"
+                                    alt="skill-icon"></li>
+                            <li><img src="https://freesvg.org/img/js_logo.png" title="Java Script" alt="skill-icon">
+                            </li>
+
+                            <li><img src="https://logospng.org/download/php/logo-php-1024.png" title="PHP"
+                                    alt="skill-icon"></li>
+
+                            <li><img src="https://wallpapercave.com/wp/wp4521293.png" title="C" alt="skill-icon"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="img-side"><img src="https://unistyleinc.com/ckeditor_assets/pictures/7987/content_0101.jpg"
+                        alt="mee" class="img-side__main-img"></img>
+                </div>
+                <div class="text-side">
+                    <h3>About me</h3>
+                    <h4>A dedicated Front-end Developer <br> based in Brighton, England 📍</h4>
+                    <p>As a Front-End developer, I possess an impressive arsenal of skills in C, HTML, CSS, JavaScript,
+                        PHP and SQL. I also have experience with computer maintenance and I know how to handle database.
+                    </p>
+                </div>
+            </div>
+            <a id="downloadButton" href="CV_Renan_Pereira_EN_Dev.pdf" download>Download CV <ion-icon
+                    name="download-outline"></ion-icon> </a>
+        </div>
+    </section>
+
+
+    <section class="qualification" id="qualification">
+
+        <div class="title_qualification">
+            <h2 class="section__title">Qualification</h2>
+            <span class="section__subtitle_t1"> My Personal journey</span>
+        </div>
+
+
+
+        <div class="qualification__container container">
+
+            <div class="qualification__tabs">
+
+                <div class="qualification__button button--flex qualification__active" data-target="#education">
+                    <i class="uil uil-graduation-cap qualification__icon"></i>
+                    Education
+                </div>
+                <div class="qualification__button button--flex" data-target="#work">
+                    <i class="uil uil-briefcase-alt"></i>
+                    Work
+                </div>
+            </div>
+
+            <div class="qualification__sections">
+                <!--========================= QUALIFICATION CONTENT 1 ==============================-->
+
+                <div class="qualification__content qualification__active" data-content id="Education">
+                    <!--================================= QUALIFICATION 1 ===============================-->
+
+                    <div class="qualification__data">
+                        <div>
+                            <h3 class="qualification__title">Programming Technician</h3>
+                            <span class="qualification__subtitle">Portugal - Escola Digital</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2020-2023
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+                    </div>
+                    <!--================================= QUALIFICATION 2 ===============================-->
+
+                    <div class="qualification__data">
+                        <div></div>
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <!-- <span class="qualification__line"></span>-->
+                        </div>
+
+                        <div>
+                            <h3 class="qualification__title">CS50’s Introduction to Computer Science</h3>
+                            <span class="qualification__subtitle">EUA - Havard Online </span>
+
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2022-2023
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--================================= QUALIFICATION 3 ===============================-->
+
+                    <!--  <div class="qualification__data">
+                        <div>
+                            <h3 class="qualification__title">Web Development</h3>
+                            <span class="qualification__subtitle">Peru - Institute</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2017-2019
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+                    </div>-->
+
+                </div>
+
+                <!--========================= QUALIFICATION CONTENT 2 ==============================-->
+
+                <div class="qualification__content" data-content id="Work">
+                    <!--================================= QUALIFICATION 1 ===============================-->
+
+                    <div class="qualification__data">
+                        <div>
+                            <h3 class="qualification__title">Database management</h3>
+                            <span class="qualification__subtitle"> Portimar - Portugal</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2022
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+                    </div>
+                    <!--================================= QUALIFICATION 2 ===============================-->
+
+                    <div class="qualification__data">
+                        <div></div>
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <!-- <span class="qualification__line"></span>-->
+                        </div>
+
+                        <div>
+                            <h3 class="qualification__title">Frontend Developer</h3>
+                            <span class="qualification__subtitle">ByBruno - Portugal</span>
+
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2023
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+    </section>
+
+
+    <section id="projects" class="project">
+        <div class="container">
+            <div class="project-content">
+                <p>Projects</p>
+                <h3>These are my personal projects 🧩</h3>
+                <div class="projects-grid">
+                    <div class="pro pro__1 undefined">
+                        <div class="pro__img">
+
+                            <img src="projetopizzadev.png" alt="website" class="image-with-transition1"></a>
+                        </div>
+
+                        <div class="pro__text">
+                            <h3>PizzaDev 🍕</h3>
+                            <p>This is a website for a pizzeria, its functionalities are for managing the restaurant,
+                                such as managing reservations and managing
+                                tables in the restaurant and for the customer to create reservations.</p>
+                            <div class="stack">
+                                <p>PHP</p>
+                                <p>JS</p>
+                            </div>
+
+                            <div class="links"><a target="_blank" href="https://github.com/rib3ni/PizzaDevPap_pt"
+                                    rel="noreferrer">Code <i class="fa-brands fa-github"></i></a>
+                                <!--   
+                                    <a target="_blank"
+                                    href="" rel="noreferrer">Live Demo<i
+                                        class="fa-solid fa-arrow-up-right-from-square link-icon"></i></a></div>
+                                  -->
+                            </div>
+                        </div>
+
+                        <!--  
+                        <div class="pro pro__1 reversed-proj">
+                            <div class="pro__img"><a target="_blank" href=""
+                                    rel="noreferrer">
+                                    <img src=""
+                                        alt="website"
+                                        
+                                        class="image-with-transition2"></a>
+                            </div>
+                            <div class="pro__text">
+                                <h3>coindom 🪙</h3>
+                                <p>Coindom is a crypto app that allows users to search for information about various
+                                    cryptocurrencies in real-time.</p>
+                                <div class="stack">
+                                    <p>React</p>
+                                    <p>SCSS</p>
+                                </div>
+                                <div class="links"><a target="_blank" href=""
+                                        rel="noreferrer">Code <i class="fa-brands fa-github"></i></a><a target="_blank"
+                                        href="" rel="noreferrer">Live Demo<i
+                                            class="fa-solid fa-arrow-up-right-from-square link-icon"></i></a></div>
+                            </div>
+                        </div>
+-->
+
+                        <!-- 
+
+                        <div class="pro pro__1 undefined">
+                            <div class="pro__img"><a target="_blank" href=""
+                                    rel="noreferrer">
+                                        <img src=""
+                                        alt="website"
+                                        class="image-with-transition2"
+                                        ></a>
+                            </div>
+                            <div class="pro__text">
+                                <h3>gymate 🏋️</h3>
+                                <p>A gym website is a comprehensive resource for fitness information, class schedules,
+                                    membership options, and tools to help users achieve their fitness goals.</p>
+                                <div class="stack">
+                                    <p>React</p>
+                                    <p>Tailwind CSS</p>
+                                </div>
+                                <div class="links"><a target="_blank" href=""
+                                        rel="noreferrer">Code <i class="fa-brands fa-github"></i></a><a target="_blank"
+                                        href="" rel="noreferrer">Live Demo<i
+                                            class="fa-solid fa-arrow-up-right-from-square link-icon"></i></a></div>
+                            </div>
+                        </div>
+
+
+                        -->
+
+                        <!-- 
+                        <div class="pro pro__1 reversed-proj">
+                            <div class="pro__img"><a target="_blank" href=""
+                                    rel="noreferrer"><img src=""
+                                        alt="website"
+                                        class="image-with-transition4">
+                                    </a>
+                            </div>
+                            <div class="pro__text">
+                                <h3>Raouf Ecommerce 🛒</h3>
+                                <p>With a focus on simplicity and clean design, this store prioritize user experience,
+                                    making it easy for customers to find and purchase the products they need.</p>
+                                <div class="stack">
+                                    <p>React</p>
+                                    <p>Vanila CSS</p>
+                                </div>
+                                <div class="links"><a target="_blank"
+                                        href="" rel="noreferrer">Code
+                                        <i class="fa-brands fa-github"></i></a><a target="_blank"
+                                        href="" rel="noreferrer">Live Demo<i
+                                            class="fa-solid fa-arrow-up-right-from-square link-icon"></i></a></div>
+                            </div>
+                        </div>
+
+
+ -->
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact__content">
+                <div class="contact__title">
+                    <p>contact</p>
+                    <h3>Don't be shy! Get in Touch! 👇</h3>
+                </div>
+                <div class="contact__icons">
+                    <div class="contact__icon-box"><span><a
+                                href="https://www.google.com/maps/place/Brighton,+Brighton+and+Hove/@50.9283515,-0.3300985,10.18z/data=!4m6!3m5!1s0x48758509f6294167:0x9cc6af7a727d0ef9!8m2!3d50.8229402!4d-0.1362672!16zL20vMGQ2eXY?entry=ttu"><i
+                                    class="fa-solid fa-map-location-dot"></i></a></span>
+                        <div class="contact__info">
+                            <h3>Location</h3>
+                            <a
+                                href="https://www.google.com/maps/place/Brighton,+Brighton+and+Hove/@50.9283515,-0.3300985,10.18z/data=!4m6!3m5!1s0x48758509f6294167:0x9cc6af7a727d0ef9!8m2!3d50.8229402!4d-0.1362672!16zL20vMGQ2eXY?entry=ttu">Brighton,
+                                England </a>
+                        </div>
+                    </div>
+                    <div class="contact__icon-box"><span><a href="mailto:renanaugustolima@gmail.com"><i
+                                    class="fa-solid fa-envelope-open-text"></i></a></span>
+                        <div class="contact__info">
+                            <h3>Mail</h3><a href="mailto:renanaugustolima@gmail.com">renanaugustolima@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footerc">
+                <h3>Copyright © 2023. All rights are reserved</h3>
+                <div class="footerc__socials"><a aria-label="linkedin" target="_blank" rel="noreferrer"
+                        href="https://www.linkedin.com/in/renanaugustopereira/"><i
+                            class="fa-brands fa-linkedin"></i></a><a aria-label="github" target="_blank"
+                        rel="noreferrer" href="https://github.com/rib3ni"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
